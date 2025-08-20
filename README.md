@@ -1,6 +1,6 @@
 # 🕵️‍♂️ CheckIPs v1.0 - 高级 IP 地址智能检测工具
 
-![image-20250820013909786](https://s1.vika.cn/space/2025/08/19/102420c4db6a45fda53198b650d69d63)
+![image-20250820101208825](https://s1.vika.cn/space/2025/08/20/8153a1189a0a42dc8271293fdc35a31b)
 
 <div align="center"><p>🔍 精准、高效的IP地址信息探测与分析解决方案 🔍</p><div><img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python版本"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="许可证"><img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="版本号"><img src="https://img.shields.io/badge/Status-Active-brightgreen.svg" alt="项目状态"></div></div>
 
@@ -18,8 +18,6 @@
 
 CheckIPs 是一款基于 Python 和 Selenium 开发的高级 IP 地址检测工具，专为网络管理员、安全分析师和开发者设计。它能够批量查询 IP 地址的地理位置信息和使用类型，以直观的方式呈现结果并生成详细报告。
 
-
-
 无论是安全审计、服务器监控还是网络分析，CheckIPs 都能为您提供精准、全面的 IP 信息，帮助您更好地理解和管理网络资源。
 
 ------
@@ -27,6 +25,7 @@ CheckIPs 是一款基于 Python 和 Selenium 开发的高级 IP 地址检测工�
 ## ✨ 核心功能
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 2rem 0;"><div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"><h3>📦 批量IP处理</h3><p>支持大规模IP地址批量检测，轻松处理上百个IP，兼容标准IP和IP:端口格式</p></div>
+
 
 
 
@@ -140,7 +139,7 @@ CheckIPs 能识别多种 IP 类型，并以不同颜色编码直观展示：
 
 ```bash
 # 基本运行方式
-python ip_hunter.py
+python CheckIPs.py
 ```
 
 运行后，您将看到精美的工具横幅和实时检测进度：
@@ -155,7 +154,7 @@ python ip_hunter.py
 ==========================================================
 
                   Author: 一只鱼（Bifish）
-                    Name: IPHunter v1.0
+                    Name: CheckIPs v1.0
                   Github: https://github.com/Bifish0
 
 ==========================================================
@@ -173,12 +172,16 @@ IP 地址检测工具 v1.0
 ...
 ```
 
+![image-20250820101333227](https://s1.vika.cn/space/2025/08/20/ab30e0e774fe48799c749a19f20b005b)
+
 ### 3. 查看检测结果
 
 - 程序运行时会在控制台实时显示检测进度和结果
 - 检测完成后，会自动生成 Excel 格式的报告文件
 - 报告文件命名格式：`ip_result_YYYYMMDD_HHMMSS.xlsx`
 - 报告包含详细的 IP 信息和统计数据
+
+![image-20250820101710530](https://s1.vika.cn/space/2025/08/20/b094814ede9d4179bcfd1e823522eb2c)
 
 ------
 
@@ -226,7 +229,6 @@ CheckIPs 基于以下优秀的开源库构建：
 ## 🙏 致谢
 
 - 感谢[ipip.la](https://ipip.la/)提供的 IP 查询服务
-- 感谢所有为本项目提供灵感和支持的开发者
 
 ------
 
