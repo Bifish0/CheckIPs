@@ -1,0 +1,14 @@
+# IP检测工具依赖包清单
+# 使用命令安装：python3 -m pip install -r requirements.txt
+
+# 网页自动化测试工具
+selenium==4.21.0
+
+# 终端彩色输出支持
+colorama==0.4.6
+
+# Excel文件处理
+openpyxl==3.1.2
+
+# Chrome浏览器驱动管理（自动下载匹配版本的chromedriver）
+webdriver-manager==4.0.1
