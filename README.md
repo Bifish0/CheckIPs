@@ -1,6 +1,6 @@
 # 🕵️‍♂️ CheckIPs v1.0 - 高级 IP 地址智能检测工具
 
-![image-20250820101208825](https://s1.vika.cn/space/2025/08/20/8153a1189a0a42dc8271293fdc35a31b)
+![image-20250820110610691](assets/image-20250820110610691.png)
 
 <div align="center"><p>🔍 精准、高效的IP地址信息探测与分析解决方案 🔍</p><div><img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python版本"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="许可证"><img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="版本号"><img src="https://img.shields.io/badge/Status-Active-brightgreen.svg" alt="项目状态"></div></div>
 
@@ -117,6 +117,39 @@ CheckIPs 能识别多种 IP 类型，并以不同颜色编码直观展示：
 
 ------
 
+## 🛠️ 参数配置
+
+CheckIPs 提供了灵活的参数配置，可根据实际需求调整检测行为：
+
+![image-20250820110212000](https://s1.vika.cn/space/2025/08/20/5d87e3ff60d34a4ead3371f2af29c9e2)
+
+| 参数         | 缩写  | 描述                             | 默认值               |
+| ------------ | ----- | -------------------------------- | -------------------- |
+| `--file`     | `-f`  | 指定 IP 列表文件路径             | `ip.txt`             |
+| `--headless` | `-hl` | 启用无头浏览器模式（无界面运行） | `False`              |
+| `--timeout`  | `-t`  | 页面加载超时时间（秒）           | `15`                 |
+| `--retry`    | `-r`  | 失败重试次数                     | `3`                  |
+| `--output`   | `-o`  | 自定义输出报告文件名             | 自动生成（含时间戳） |
+| `--interval` | `-i`  | 检测间隔时间（秒）               | `2`                  |
+| `--help`     | `-h`  | 显示帮助信息                     | -                    |
+
+### 参数使用示例：
+
+```bash
+# 使用自定义IP文件并启用无头模式
+python CheckIPs.py -f my_ips.txt -hl
+
+# 设置超时时间为10秒，重试次数为5次
+python CheckIPs.py -t 10 -r 5
+
+# 自定义输出文件名
+python CheckIPs.py -o my_report.xlsx
+```
+
+------
+
+
+
 ## 📝 使用教程
 
 ### 1. 准备 IP 列表
@@ -184,6 +217,59 @@ IP 地址检测工具 v1.0
 ![image-20250820101710530](https://s1.vika.cn/space/2025/08/20/b094814ede9d4179bcfd1e823522eb2c)
 
 ------
+
+## 📝 详细使用方法
+
+### 1. 基础使用流程
+
+1. **准备 IP 列表**
+   创建文本文件（默认`ip.txt`），每行填写一个 IP 地址：
+
+   ```plaintext
+   # 支持格式示例
+   8.8.8.8
+   114.114.114.114:8080
+   203.0.113.1
+   ```
+
+2. **运行检测工具**
+
+   ```bash
+   # 基础命令（使用默认配置）
+   python CheckIPs.py
+   
+   # 查看所有可用参数
+   python CheckIPs.py --help
+   ```
+
+3. **查看检测结果**
+
+   - 终端实时显示检测进度和结果（彩色区分 IP 类型）
+   - 自动生成 Excel 报告（默认路径：当前目录）
+   - 报告包含：IP 地址、国家 / 地区、使用类型、检测时间、状态
+
+### 2. 高级使用场景
+
+- **批量检测大量 IP**
+
+  ```bash
+  # 启用无头模式并延长间隔时间，避免触发限制
+  python CheckIPs.py -f large_ip_list.txt -hl -i 3
+  ```
+
+- **自定义报告输出**
+
+  ```bash
+  # 指定输出路径和文件名
+  python CheckIPs.py -o ./reports/2025_q3_ip_check.xlsx
+  ```
+
+- **调试模式运行**
+
+  ```bash
+  # 禁用无头模式，显示浏览器窗口便于调试
+  python CheckIPs.py  # 默认不启用无头模式
+  ```
 
 ## 📂 项目结构
 
