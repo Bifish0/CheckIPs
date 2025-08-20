@@ -1,6 +1,6 @@
 # 🕵️‍♂️ CheckIPs v1.0 - 高级 IP 地址智能检测工具
 
-![image-20250820110610691](assets/image-20250820110610691.png)
+![image-20250820110610691](https://s1.vika.cn/space/2025/08/20/b6feb84bd00044629e53edeefbdd1077)
 
 <div align="center"><p>🔍 精准、高效的IP地址信息探测与分析解决方案 🔍</p><div><img src="https://img.shields.io/badge/Python-3.x-blue.svg" alt="Python版本"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="许可证"><img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="版本号"><img src="https://img.shields.io/badge/Status-Active-brightgreen.svg" alt="项目状态"></div></div>
 
