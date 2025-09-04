@@ -9,7 +9,7 @@
 ## 👨‍💻 作者信息
 
 - **作者**：一只鱼（Bifish）
-- **GitHub**：https://github.com/Bifish0
+- **GitHub**：https://github.com/Bifishone
 - **工具名称**：CheckIPs v1.0
 
 ------
