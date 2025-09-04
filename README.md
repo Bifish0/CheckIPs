@@ -188,7 +188,7 @@ python CheckIPs.py
 
                   Author: 一只鱼（Bifish）
                     Name: CheckIPs v1.0
-                  Github: https://github.com/Bifish0
+                  Github: https://github.com/Bifishone
 
 ==========================================================
 
